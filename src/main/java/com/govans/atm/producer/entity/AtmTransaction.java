@@ -31,4 +31,5 @@ public class AtmTransaction {
     private Date datetimeAdded;
     private String lat;
     private String lng;
+
 }
