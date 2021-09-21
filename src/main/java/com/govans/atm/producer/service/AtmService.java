@@ -69,12 +69,12 @@ public class AtmService {
                         log.info("JSON string message :"+ jsonString);
 
                         // Post message to Kafka microservice (Producer)
-//                        webClientBuilder.build().post()
-//                                .uri(ApiUrl)
-//                                .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
-//                                .body(Mono.just(trx), AtmTransaction.class)
-//                                .retrieve()
-//                                .bodyToMono(AtmTransaction.class).block();
+                        webclientbuilder.build().post()
+                                .uri(apiurl)
+                                .header(httpheaders.content_type, mediatype.application_json_value)
+                                .body(mono.just(trx), atmtransaction.class)
+                                .retrieve()
+                                .bodyToMono(AtmTransaction.class).block();
                     }
                 }
 
